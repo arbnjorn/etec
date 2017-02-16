@@ -1,0 +1,2 @@
+# etec
+conteúdo da etec
