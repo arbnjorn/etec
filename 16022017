@@ -1,0 +1,25 @@
+MÉDICO ->
+* CRM
+- NOME
+- DATA
+- SALARIO
+- FORMAÇÃO
+
+PACIENTE ->
+* Código
+- NOME
+- RG
+- CPF
+- ENDEREÇO
+- TELEFONE
+- DATA DE NASCIMENTO
+
+QUARTOS ->
+* Número
+- ANDAR
+
+
+
+Paciente -> (1,1) VISITA (n,n) <- MÉDICO
+Paciente -> (1,1) TEM (1,1 ) <- QUARTO
+
