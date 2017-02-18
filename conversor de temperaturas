@@ -1,0 +1,123 @@
+Link para o código: https://goo.gl/kpL2lv
+
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) {
+	
+	
+	// TRABALHO DE FÍSICA SOBRE CONVERSÃO DE TEMPERATURAS EM CÓDIGO C 
+	// DESENVOLVIDO POR MATEUS ALVES, 2ª Info
+	
+	//CONJUNTO DE VALORES EQUACIONADOS
+	float tk,tk3;
+	float tk1,tk2;
+	float tf,tf1,tf2,tf3;
+	float tc,tc1,tc2;
+	
+	//CONJUNTO DE VARIAVEIS INSERIDOS
+	float vlr;
+	float vcelsius,vfahrenheit,vkelvin;
+
+	//INICIO
+	
+	printf("\t\tESTE PROGRAMA CONVERTE VALORES DE TEMPERATURA\n");
+	printf("\n\n");
+	printf("\tINSIRA O VALOR CORRESPONDENTE A TEMPERATURA QUE SERA CONVERTIDA\n");
+	printf("\n\n");
+	printf("1 - CELSIUS \n");
+	printf("2 - FAHRENHEIT \n");
+	printf("3 - KELVIN\n\n");
+	scanf("%f", &vlr);
+	
+	
+	if(vlr == 1){
+		printf("\n\n");
+		printf("QUAL E A TEMPERATURA EM CELSIUS? \t");
+		scanf("%f", &vcelsius);
+		
+tf = vcelsius/5;
+
+tf1 = tf*9;
+
+tf2 = tf1 + 32; 
+
+tk = vcelsius/5;
+
+tk1 = tk*5;
+
+tk2 = tk1 + 273;
+
+printf("\n\nResultados:\n");
+printf("Temperatura em Celsius: %2.2f\n", vcelsius);
+printf("Temperatura em Fahrenheit: %2.2f\n", tf2);
+printf("Temperatura em Kelvin:  %2.2f\n", tk2);
+return 0;
+system ("pause");
+	}
+	
+	if(vlr == 2){
+		printf("\n\n");
+		printf("QUAL E A TEMPERATURA EM FAHRENHEIT? \t");
+		scanf("%f", &vfahrenheit);
+		
+tc = vfahrenheit-32;
+
+tc1 = tc/9;
+
+tc2 = tc1 * 5; 
+
+tk = vfahrenheit-32;
+
+tk1 = tk/9;
+
+tk2 = tk1*5;
+
+tk3 = tk2+273;
+
+printf("\nResultados:\n\n");
+printf("Temperatura em Fahrenheit: %2.2f\n", vfahrenheit);
+printf("Temperatura em Celsius: %2.2f\n", tc2);
+printf("Temperatura em Kelvin:  %2.2f\n", tk3);
+return 0;
+system ("pause");
+	}
+  if(vlr == 3){
+  printf("\n\n");
+		printf("QUAL E A TEMPERATURA EM KELVIN? \t");
+		scanf("%f", &vkelvin);
+		
+  
+  tc = vkelvin-273;
+
+tc1 = tc/5;
+
+tc2 = tc1 * 5; 
+
+tf = vkelvin-273;
+
+tf1 = tf/5;
+
+tf2 = tf1*9;
+
+tf3 = tf2+32;
+
+printf("\nResultados:\n\n");
+printf("Temperatura em Kelvin:  %2.2f\n", vkelvin);
+printf("Temperatura em Celsius: %2.2f\n", tc2);
+printf("Temperatura em Fahrenheit: %2.2f\n",tf3 );
+return 0;
+system ("pause");
+  }
+  else{
+  	printf("\nNUMERO INVALIDO\n");
+  }
+ 
+
+
+	
+	return 0;
+	system ("pause");
+	
+}
